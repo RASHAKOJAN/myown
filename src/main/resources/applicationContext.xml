@@ -35,4 +35,9 @@
         <constructor-arg value="New York"></constructor-arg>
     </bean>
 
+    <bean id="p1" class="com.myown.server.test.Person" parent="p">
+        <constructor-arg ref="address"></constructor-arg>
+    </bean>
+
+
 </beans>
