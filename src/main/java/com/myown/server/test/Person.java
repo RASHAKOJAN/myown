@@ -52,6 +52,45 @@ public class Person {
         this.address = address1;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public List<String> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(List<String> addresses) {
+        this.addresses = addresses;
+    }
+
+    public Map<String, String> getDescription() {
+        return description;
+    }
+
+    public void setDescription(Map<String, String> description) {
+        this.description = description;
+    }
 
     public void display(){
         System.out.println(" id:" + id +" name:" + name);
@@ -84,5 +123,9 @@ public class Person {
             System.out.println(" key: " + entry.getKey() + " value: " + entry.getValue());
         }
         System.out.println(" adress:" + address.infoAddress());
+    }
+
+    public void active() {
+        System.out.println(" id:" + id + " name:" + name);
     }
 }

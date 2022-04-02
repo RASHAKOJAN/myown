@@ -10,8 +10,10 @@ public class test {
         ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         /*Person p = (Person) app.getBean("p");
         p.display();*/
-        Person p = (Person) app.getBean("p1");
-        p.show();
+       /* Person p = (Person) app.getBean("p1");
+        p.show();*/
+        Person p = (Person) app.getBean("p2");
+        p.active();
 
     }
 
