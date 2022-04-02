@@ -12,6 +12,14 @@
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Rasha"></constructor-arg>
         <constructor-arg><ref bean="address"></ref> </constructor-arg>
+        <constructor-arg>
+            <list>
+                <value>Chicago</value>
+                <value>Philadelphia</value>
+                <value>Austin</value>
+                <value>Dallas</value>
+            </list>
+        </constructor-arg>
     </bean>
 
     <bean id="address" class="com.myown.server.test.Address">
