@@ -20,6 +20,12 @@
                 <value>Dallas</value>
             </list>
         </constructor-arg>
+        <constructor-arg>
+            <map>
+                <entry key="1" value="Rasha"></entry>
+                <entry key="2" value="Maria"></entry>
+            </map>
+        </constructor-arg>
     </bean>
 
     <bean id="address" class="com.myown.server.test.Address">
